@@ -179,3 +179,18 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+/numpy
+/pandas
+/pytz
+/tzdata
+/six-1.17.0.dist-info
+/pytz-2025.2.dist-info
+/python_dateutil-2.9.0.post0.dist-info
+/pandas-2.3.3.dist-info
+/numpy.libs
+/numpy-2.3.5.dist-info
+/dateutil
+/bin
+/pandas.libs
+six.py
+/tzdata-2025.2.dist-info
