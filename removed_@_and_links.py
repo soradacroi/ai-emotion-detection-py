@@ -1,6 +1,5 @@
 import csv
 import re
-import sys
 
 FILE_PATH = 'tweet_emotions.csv'
 OUTPUT_FILE_PATH = 'tweet_emotions_cleaned.csv'
