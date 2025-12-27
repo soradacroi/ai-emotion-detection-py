@@ -194,3 +194,4 @@ cython_debug/
 /pandas.libs
 six.py
 /tzdata-2025.2.dist-info
+test.py
