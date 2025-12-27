@@ -8,6 +8,7 @@ the data which i will be using is a public domain data from data.world, data con
 
 after seeing this data idk... ehhh... it looks too like worry has 36636 items and sentiment only 7... i might remove some items. but later
 
+```
 Emotion counts:  
 sadness: 23784   
 enthusiasm: 2736  
@@ -23,6 +24,7 @@ relief: 6452
 empty: 3148   
 anger: 488   
 sentiment: 7  
+```
 
 
 why there is so much worries remove that, let some happiness count and make some fun(5840) and love(14036) -> happiness(19672) = 39548
@@ -40,6 +42,7 @@ I'm not removing the first "why there is so much worries..." tho as its like i l
 
 ok so the numbers of counts for emotions are like this now
 
+```
 sadness: 23784            ->  
 enthusiasm: 2736  
 neutral: 29492            ->  
@@ -51,6 +54,7 @@ happiness: 19672          ->
 love: 14028               ->      
 relief: 6452  
 sentiment: 7  
+```
 
 we can use sadness, neutral, worry, negative, love and happiness now, as these all has more then 10k elements
 and maybe using a data which has same numbers of elements for each category will help make a better model
