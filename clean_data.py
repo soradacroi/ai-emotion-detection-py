@@ -22,6 +22,8 @@ with open(FILE_PATH, mode='r') as infile:
 
     for i, row in enumerate(reader):
         if len(row) > CONTENT_COLUMN_INDEX:
+            if row[0] in ["anger", "empty", "hate", "boredom"]:
+                row[0] = "negative"
             row = [row[0], row[1].lower()]
             original_content = row[CONTENT_COLUMN_INDEX]
             if check_for_filter_content(original_content):
