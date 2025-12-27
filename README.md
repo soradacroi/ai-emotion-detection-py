@@ -43,15 +43,15 @@ I'm not removing the first "why there is so much worries..." tho as its like i l
 ok so the numbers of counts for emotions are like this now
 
 ```
-sadness: 23784      ->  
+sadness: 23784    ->  
 enthusiasm: 2736  
-neutral: 29492      ->  
-worry: 36636        ->  
+neutral: 29492    ->  
+worry: 36636      ->  
 surprise: 7652  
 fun: 5840  
-negative: 10944     ->  
-happiness: 19672    ->  
-love: 14028         ->      
+negative: 10944   ->  
+happiness: 19672  ->  
+love: 14028       ->      
 relief: 6452  
 sentiment: 7  
 ```
