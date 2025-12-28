@@ -23,6 +23,7 @@ after seeing this data idk... ehhh... it looks too like worry has 36636 items an
 * anger: 488   
 * sentiment: 7  
 
+#### dec 27
 
 why there is so much worries remove that, let some happiness count and make some fun(5840) and love(14036) -> happiness(19672) = 39548
 
@@ -63,3 +64,9 @@ and maybe using a data which has same numbers of elements for each category will
 ALSO i will be trying to come up with something else instead of using TF-IDF. 
 
 I HOPE I CAN DO THAT BY MYSELF 
+
+---
+
+#### dec  28
+
+i well did more stuff in the cleaning part so, removed the symbols
