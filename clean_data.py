@@ -24,7 +24,7 @@ with open(FILE_PATH, mode='r') as infile:
         if len(row) > CONTENT_COLUMN_INDEX:
             if row[0] in ["anger", "empty", "hate", "boredom"]:
                 row[0] = "negative"
-            row = [row[0], row[1].lower()]
+            row = [row[0], re.sub(r"[^a-z ]", "", row[1].lower())]
             original_content = row[CONTENT_COLUMN_INDEX]
             if check_for_filter_content(original_content):
                 continue
