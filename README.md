@@ -33,7 +33,7 @@ so now we will have neutral : 29492 then sadness :  23784 then happiness : 39548
 BTW im doing this all because the data for some emotion is way too much and some are way too little which is making my models biased towards some emotions like **worry**, i worte "i am happy" and it gave **worry** like what the hell... also i was not doing any mistakes in coding part as i just ~copied~ took some inspiration from someone elese code, ok no jokes i just took some idea on to how to do it using
 [geeksforgeek](https://www.geeksforgeeks.org/nlp/word-embeddings-in-nlp/) idk if its good or not... but it yeah it had some bias predictions.
 
-so yeah the another emotion i want to select for is anger but man its too small data, maybe combining (anger, empty, hate, boredom) will help as it will make a dataset of 10k elements ***i called this dataset*** <span style="color:#00fbff">***negative***</span>, and that will be enough for us to do. Using 10k elements from all of the dataset.
+so yeah the another emotion i want to select for is anger but man its too small data, maybe combining (anger, empty, hate, boredom) will help as it will make a dataset of 10k elements ***i called this dataset negative***, and that will be enough for us to do. Using 10k elements from all of the dataset.
 
 That can also be good as we now only need 10k so we can use **love** as other category too, and **worry** all 10k.
 
