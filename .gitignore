@@ -195,3 +195,4 @@ cython_debug/
 six.py
 /tzdata-2025.2.dist-info
 test.py
+testmood.py
