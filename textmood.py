@@ -123,11 +123,49 @@ def train(train_data, labels, say=True):
         print(f"training done vocab size: {len(vocab)}\n")
 
 
-def save_model(name = "model"):
-    data = (counts, feat_counts, docs_per_class, priors, total_docs)
+def save_model(name = "model.pkl"):
+    data = {
+        "counts": counts,
+        "total_feat_count": total_feat_count,
+        "docs_per_class": docs_per_class,
+        "priors": priors,
+        "vocab": vocab,
+        "labels": list(priors.keys())
+    }
     with open(name, "wb") as file:
         pickle.dump(data, file)
+    print(f"Model saved successfully as {name}")
     
+def save_model(name="emotion_model.pkl"):
+    # We use a dictionary to keep things organized
+    # We pull labels from the priors keys so you don't need a global LABELS list
+    model_data = {
+        "counts": counts,
+        "total_feat_count": total_feat_count,
+        "docs_per_class": docs_per_class,
+        "priors": priors,
+        "vocab": vocab,
+        "labels": list(priors.keys())
+    }
+    with open(name, "wb") as file:
+        pickle.dump(model_data, file)
+    print(f"Model saved to {name}")
+
+def load_model(name="emotion_model.pkl"):
+    global counts, total_feat_count, docs_per_class, priors, vocab
+    
+    with open(name, "rb") as file:
+        data = pickle.load(file)
+        
+    counts = data["counts"]
+    total_feat_count = data["total_feat_count"]
+    docs_per_class = data["docs_per_class"]
+    priors = data["priors"]
+    vocab = data["vocab"]
+    
+    print(f"Model loaded successfully! Vocab size: {len(vocab)}")
+    return data["labels"]
+
 def predict(text, labels, smooth=0.1):
     features = get_features(text)
     vocab_size = len(vocab)
